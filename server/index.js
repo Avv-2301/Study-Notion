@@ -46,7 +46,7 @@ app.use("/api/v1/reach", contactUsRoute);
 
 //def route
 
-app.get("/", (req, res) => {
+app.get("*", (req, res) => {
 	res.sendFile(path.join(__dirname, '../src/build/index.html'));
 });
 
