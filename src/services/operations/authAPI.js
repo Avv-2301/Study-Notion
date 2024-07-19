@@ -83,7 +83,7 @@ export function signUp(
   };
 }
 
-export function login(email, password, navigate, token) {
+export function login(email, password, navigate) {
   return async (dispatch) => {
     const toastId = toast.loading("Loading...");
     dispatch(setLoading(true));
@@ -94,12 +94,6 @@ export function login(email, password, navigate, token) {
         {
           email,
           password,
-        },
-        {
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
-          },
         }
       );
 
