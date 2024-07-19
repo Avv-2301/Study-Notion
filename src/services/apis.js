@@ -1,4 +1,4 @@
-const BASE_URL = "https://study-notion-backend-sage.vercel.app"
+const BASE_URL = "https://study-notion-backend-2nuo.onrender.co"
 
 // AUTH ENDPOINTS
 export const endpoints = {
