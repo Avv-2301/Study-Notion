@@ -11,9 +11,8 @@ const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const {cloudinaryConnect } = require("./config/cloudinary");
 const fileUpload = require("express-fileupload");
-const dotenv = require("dotenv");
+require("dotenv").config();
 
-dotenv.config();
 const PORT = process.env.PORT || 4000;
 
 //database connect
@@ -23,7 +22,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
 	cors({
-		origin:"https://study-notion-backend-2nuo.onrender.com",
+		origin:"https://study-notion-frontend-puce.vercel.app/",
 		credentials:true,
 	})
 )
