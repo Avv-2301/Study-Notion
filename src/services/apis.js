@@ -1,4 +1,4 @@
-const dotenv = require("dotenv");
+
 const BASE_URL = process.env.REACT_APP_URL
 
 // AUTH ENDPOINTS
