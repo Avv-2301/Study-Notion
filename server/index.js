@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
 	cors({
-		origin:"study-notion-frontend-puce-alpha.vercel.app",
+		origin:"study-notion-frontend-puce.vercel.app",
 		credentials:true,
 	})
 )
