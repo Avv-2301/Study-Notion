@@ -26,7 +26,7 @@ function Navbar() {
       setLoading(true)
       try {
         const res = axios.get("https://study-notion-backend-2nuo.onrender.com/api/v1/course/showAllCategories")
-        setSubLinks(res.data.data)
+        setSubLinks(res?.data?.data)
       } catch (error) {
         console.log("Could not fetch Categories.", error)
       }
