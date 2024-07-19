@@ -1,4 +1,5 @@
-const BASE_URL = "https://study-notion-backend-2nuo.onrender.com/api/v1"
+const dotenv = require("dotenv");
+const BASE_URL = process.env.REACT_APP_URL
 
 // AUTH ENDPOINTS
 export const endpoints = {
