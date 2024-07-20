@@ -22,7 +22,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
 	cors({
-		origin:"https://study-notion-frontend-puce.vercel.app/",
+		origin:"https://study-notion-frontend-puce.vercel.app",
 		methods: ["GET", "POST", "PUT", "DELETE"],
     	allowedHeaders: ["Content-Type", "Authorization"],
 		credentials:true,
